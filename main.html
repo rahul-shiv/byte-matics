@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        TRIAL
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js'></script>
+<body data-ng-app="sumApp" data-ng-controller="control">
+<div class="adder">ADDER</div>
+<input class='start' style="position:absolute;left:45%;top:40%" type='button' value='Perform Addition' data-ng-click='disp()' data-ng-show="start"></input>
+<popup data-ng-show="see" id='myModal'></popup>
+<display data-ng-show="ans"></display>
+<script src='script.js'>
+</script>
+
+</body>
+</html>
