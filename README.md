@@ -1,7 +1,7 @@
 # Bytematics
 
 
-# Task
+## Task
 
   Make a webpage with following features:
   
@@ -14,6 +14,6 @@
     4. Clicking OK on the popup, shall close the popup and show the sum of two numbers in the main page.
 
 
-# Note
+## Note
 
   The framework angularJS has been used.
