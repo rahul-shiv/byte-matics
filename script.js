@@ -36,9 +36,9 @@ app.controller('control',function($scope,$window){
 app.directive('popup',function(){
     return{
         template:  "<form name='myForm' class='popup animate-show-hide'>\
-                    <input type='text' class='inp' ng-pattern='/^[0-9]+(.[0-9]+)?$/' ng-model='num1' name='num1' required></input>\
+                    <input type='text' class='inp' ng-pattern='/^[+-]?[0-9]+(.[0-9]+)?$/' ng-model='num1' name='num1' required></input>\
                     <span class='warning' data-ng-show='myForm.num1.$error.pattern||(myForm.num1.$touched&&myForm.num1.$error.required)'>Enter A Valid Number</span><br><br>\
-                    <input type = 'text' class='inp' ng-model='num2' ng-pattern='/^[0-9]+(.[0-9]+)?$/' name='num2' required></input>\
+                    <input type = 'text' class='inp' ng-model='num2' ng-pattern='/^[+-]?[0-9]+(.[0-9]+)?$/' name='num2' required></input>\
                     <span class='warning' data-ng-show='myForm.num2.$error.pattern||(myForm.num2.$touched&&myForm.num2.$error.required)'>Enter A Valid Number</span><br>\
                     <input class= 'start' style='position:relative;left:30%;top:15px' type='button' value='Perform Addition' data-ng-click='dispans()'></input>\
                     </form>\
